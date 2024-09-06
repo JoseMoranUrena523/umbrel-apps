@@ -12,7 +12,7 @@ services:
     volumes:
       - "${APP_DATA_DIR}/app_data:/app_data"
       - "${APP_DATA_DIR}/user_data:/user_data"
-      - "./user_data/config.json:${APP_DATA_DIR}/user_data/config.json"
+      - "${APP_DATA_DIR}/user_data/config.json:/user_data/config.json"
     command: >
       trade
       --logfile ${APP_DATA_DIR}/user_data/logs/freqtrade.log
