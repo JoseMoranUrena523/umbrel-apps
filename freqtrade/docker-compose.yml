@@ -1,0 +1,20 @@
+version: "1.0"
+
+services:
+  app_proxy:
+    environment:
+      APP_HOST: freqtrade_web_1
+      APP_PORT: 8080
+      
+  web:
+    image: freqtradeorg/freqtrade:stable
+    restart: on-failure
+    volumes:
+      - "${APP_DATA_DIR}/user_data:/user_data"
+      - "${APP_DATA_DIR}/app_data:/app_data"
+    command: >
+      trade
+      --logfile ${APP_DATA_DIR}/user_data/logs/freqtrade.log
+      --db-url sqlite:///${APP_DATA_DIR}/user_data/tradesv3.sqlite
+      --config ${APP_DATA_DIR}/user_data/config.json
+      --strategy SampleStrategy
