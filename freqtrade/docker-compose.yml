@@ -11,7 +11,5 @@ services:
     restart: on-failure
     volumes:
       - "${APP_DATA_DIR}/app_data:/app_data"
-    environment:
-      - APP_DATA_DIR=/app_data
-    entrypoint: /app_data/entrypoint.sh
+    entrypoint: "${APP_DATA_DIR}/app_data/entrypoint.sh"
     command: trade
