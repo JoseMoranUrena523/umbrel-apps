@@ -5,13 +5,13 @@ services:
     environment:
       APP_HOST: freqtrade_web_1
       APP_PORT: 8080
-      
+
   web:
     image: freqtradeorg/freqtrade:stable
-    restart: unless-stopped
-    ports:
-      - "6825:6824"
+    restart: on-failure
     volumes:
-      - "${APP_DATA_DIR}/user_data:/user_data"
       - "${APP_DATA_DIR}/app_data:/app_data"
-    command: "${APP_DATA_DIR}/app_data/entrypoint.sh"
+    environment:
+      - APP_DATA_DIR=/app_data
+    entrypoint: /app_data/entrypoint.sh
+    command: trade
