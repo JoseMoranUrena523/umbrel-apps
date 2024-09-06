@@ -9,10 +9,8 @@ services:
   web:
     image: freqtradeorg/freqtrade:stable
     restart: unless-stopped
-    environment:
-      PORT: "6824"
     ports:
-      - "6824:6824"
+      - "6825:6824"
     volumes:
       - "${APP_DATA_DIR}/user_data:/user_data"
       - "${APP_DATA_DIR}/app_data:/app_data"
