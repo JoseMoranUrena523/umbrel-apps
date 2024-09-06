@@ -8,7 +8,7 @@ description: >-
   Freqtrade is a free and open source crypto trading bot written in Python. It is designed to support all major exchanges and be controlled via Telegram or webUI. It contains backtesting, plotting and money management tools as well as strategy optimization by machine learning. Time to take full advantage of umbrelOS and automate cryptocurrency trading.
 releaseNotes: >-
   First release of Freqtrade on Umbrel using the Freqtrade Docker image.
-developer: Dan Janosik & Jose Moran Urena
+developer: Dan Janosik
 website: https://www.freqtrade.io/en/stable/
 repo: https://github.com/JoseMoranUrena523/freqtrade
 support: https://github.com/JoseMoranUrena523/freqtrade/discussions
