@@ -12,5 +12,5 @@ services:
     volumes:
       - "${APP_DATA_DIR}/app_data:/app_data"
       - "${APP_DATA_DIR}/user_data:/user_data"
-    entrypoint: /app_data/entrypoint.sh
+    entrypoint: ${APP_DATA_DIR}/entrypoint.sh
     command: trade
