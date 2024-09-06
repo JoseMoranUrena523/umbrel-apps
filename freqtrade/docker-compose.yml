@@ -12,5 +12,10 @@ services:
     volumes:
       - "${APP_DATA_DIR}/app_data:/app_data"
       - "${APP_DATA_DIR}/user_data:/user_data"
-    entrypoint: ["${APP_DATA_DIR}/entrypoint.sh"]
-    command: trade
+      - "./user_data/config.json:${APP_DATA_DIR}/user_data/config.json"
+    command: >
+      trade
+      --logfile ${APP_DATA_DIR}/user_data/logs/freqtrade.log
+      --db-url sqlite:///${APP_DATA_DIR}/user_data/tradesv3.sqlite
+      --config ${APP_DATA_DIR}/user_data/config.json
+      --strategy SampleStrategy
