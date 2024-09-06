@@ -12,7 +12,7 @@ developer: Dan Janosik & Jose Moran Urena
 website: https://www.freqtrade.io/en/stable/
 repo: https://github.com/JoseMoranUrena523/freqtrade
 support: https://github.com/JoseMoranUrena523/freqtrade/discussions
-port: 6824
+port: 3002
 gallery:
   - 1.png
   - 2.png
