@@ -22,7 +22,7 @@ services:
       PROXY_AUTH_WHITELIST: "/api/*,/search/*"
 
   server:
-    image: ghcr.io/immich-app/immich-server:v1.113.0@sha256:9d1c9ab40f3171f1dc06d5c6bc32541ff4b0835c1d217ff5cc61c85e26d2452f
+    image: ghcr.io/immich-app/immich-server:v1.117.0@sha256:ac9fb82f2be3cc60d4e0c7f1ceb371d401d52573e387834d7a82776116458242
     volumes:
       - ${APP_DATA_DIR}/data/upload:/usr/src/app/upload
     environment:
@@ -33,7 +33,7 @@ services:
     restart: on-failure
 
   machine-learning:
-    image: ghcr.io/immich-app/immich-machine-learning:v1.113.0@sha256:f7964140e00bd615497d37040eb907a7cd87db6f06baea784d411cda572a29df
+    image: ghcr.io/immich-app/immich-machine-learning:v1.117.0@sha256:1221bc54568a0779227baeaa4282bb0e0db50831b66f9ac9afa9d78513df36ad
     volumes:
       - ${APP_DATA_DIR}/data/model-cache:/cache
     environment:

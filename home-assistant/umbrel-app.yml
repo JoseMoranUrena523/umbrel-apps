@@ -2,7 +2,7 @@ manifestVersion: 1.1
 id: home-assistant
 category: automation
 name: Home Assistant
-version: "2024.8.3"
+version: "2024.10.1"
 tagline: Home automation that puts local control & privacy first
 description: >-
   Open source home automation that puts local control and privacy
@@ -40,18 +40,8 @@ torOnly: false
 permissions:
   - STORAGE_DOWNLOADS
 releaseNotes: >-
-  This release includes several improvements and bug fixes:
+  This is a small bugfix release.
 
-    - Skip NextBus update during integration loading.
-    - Added support for the Alt Core300s model in Vesync.
-    - Updated Matter light transition blocklist for GE Cync Undercabinet Lights.
-    - Prevent KeyError for invalid Matter device values.
-    - Fixed Spotify media browsing for new config entries.
-    - Resolved crash with SenseCAP devices in TTN client.
-    - Added supported features for iZone.
-    - Fixed missing ID in Habitica API response.
-    - Adjusted Alexa remote activity support based on feature settings.
-    - Included various version updates for multiple integrations and dependencies.
   
   Full release notes are available at https://github.com/home-assistant/core/releases
 submitter: Umbrel

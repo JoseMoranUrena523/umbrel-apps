@@ -7,7 +7,7 @@ services:
       APP_PORT: 3063
 
   web:
-    image: ghcr.io/maybe-finance/maybe:0.1.0-alpha.16@sha256:d8db0b5c277140f19bc4fc5208295e0db0d9ba3f951dd02c8aad5addf8f0ef5b
+    image: ghcr.io/maybe-finance/maybe:0.1.0-alpha.18@sha256:ea3529e9e94d00e1824d79a936d212f533df58db9c9394ce2192597eb66c3c2b
     restart: on-failure
     stop_grace_period: 1m
     volumes:

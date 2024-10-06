@@ -2,7 +2,7 @@ manifestVersion: 1.1
 id: immich
 category: files
 name: Immich
-version: "v1.113.0"
+version: "1.117.0"
 tagline: High-performance photo and video backup solution
 description: >-
   An open-source and high-performance self-hosted backup solution for the videos and photos on your mobile device
@@ -48,16 +48,11 @@ releaseNotes: >-
   ⚠️ As usual, please check that your mobile app is compatible with this release of Immich.
 
 
-  ⚠️ For OAuth users, please replace 'app.immich:/' with 'app.immich:///oauth-callback' for the Redirect URI in your OAuth provider settings.
-
-
-  Welcome to version v1.113.0 of Immich. This is one of the biggest releases yet, introducing some of the most requested features since the early days of Immich. Key highlights include:
-    - Folder view: Browse your photos and videos by folder like in a file explorer
-    - Tags: Support for hierarchical tags, with the ability to read existing tags from EXIF properties
-    - Timeline improvements: Better handling of large numbers of assets in a single day or month
-    - Library refresh stability: Improved stability for scanning large libraries
-    - Mobile album sync: Sync or mirror an album from your phone to the Immich server on your account
-
+  Some of the key highlights in this release include:
+    - Better folder checks
+    - Support and feedback links
+    - Upgrade history
+    - Asset thumbnail improvements
 
   Full release notes are found at https://github.com/immich-app/immich/releases
 developer: Alex Tran

@@ -3,7 +3,7 @@ id: audiobookshelf
 name: Audiobookshelf
 tagline: Audiobook and podcast server
 category: media
-version: "2.13.2"
+version: "2.14.0"
 port: 13378
 description: >-
   Features:
@@ -65,12 +65,21 @@ releaseNotes: >-
 
 
   Fixed:
-    - New authors not setting 'lastFirst' column
-    - Toasts not showing when updating library items
+    - Server crash when scanning a library with no metadata precedence set
+    - Server crash on listening session sync
+    - Issues with parsing comics
+    - Server crash when calling library items API endpoint with non-integer limit
+    - Improved handling of authors and series with non-ASCII characters
 
 
   Changed:
-    - More strings translated, including Slovenian
+    - New users default permissions now deny explicit content
+    - Improved logger formatting
+    - Enhanced handling of library scan failures
+    - UI/UX improvements, including centered audio player play button and vertical volume control
+    - Playlist & collection "Play" button renamed to "Play All"
+    - Improved number formatting on user listening stats chart
+    - More strings translated in various languages
 
 
   Full release notes can be found at https://github.com/advplyr/audiobookshelf/releases
