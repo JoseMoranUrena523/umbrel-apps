@@ -4,11 +4,10 @@ services:
   app_proxy:
     environment:
       APP_HOST: emby-server_web_1
-      APP_PORT: 8097
+      APP_PORT: 8098
 
   web:
     image: emby/embyserver:4.8.10.0@sha256:be113ebc40cc354e4c0e9e551048c291dd2841661961d5fd796044213fd662cd
-    user: root
     restart: on-failure
     network_mode: host
     volumes:
