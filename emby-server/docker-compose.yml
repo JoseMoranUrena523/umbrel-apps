@@ -4,11 +4,13 @@ services:
   app_proxy:
     environment:
       APP_HOST: emby-server_web_1
-      APP_PORT: 8098
+      APP_PORT: 8097
+      https://github.com/JoseMoranUrena523/umbrel-apps/blob/master/jellyfin/docker-compose.yml
 
   web:
     image: emby/embyserver:4.8.10.0@sha256:be113ebc40cc354e4c0e9e551048c291dd2841661961d5fd796044213fd662cd
     restart: on-failure
+    hostname: "${DEVICE_HOSTNAME}"
     network_mode: host
     volumes:
       - ${APP_DATA_DIR}/programdata:/config
